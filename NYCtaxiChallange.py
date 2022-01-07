@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # When we are given 10 hours to build a model,we will work 6 hours to build the dataset ~dataScientist
 
 # UnderStand the dataset by
@@ -12,7 +9,6 @@
 
 # Importing all the nessecary packages for work
 
-# In[16]:
 
 
 import pandas as pd
@@ -25,22 +21,15 @@ warnings.filterwarnings('ignore')
 
 # Analysing given dataset
 
-# In[17]:
-
-
 #Reading the dataSet using panda
 data = pd.read_csv("/Users/harikrishnareddy/Desktop/nyc_taxi_trip_duration Dataset.csv")
 
 
-# In[18]:
 
 
 #lets see what we got in here like shape,types and look for any null values or duplicates in dataSet
 print(data.shape)
 print(f'In the given dataSet the No.of rows are {data.shape[0]} & columns are {data.shape[1]}')
-
-
-# In[19]:
 
 
 print(data.dtypes)
@@ -68,8 +57,6 @@ print(data.dtypes)
 # 
 # trip_duration - (target) duration of the trip in seconds
 
-# In[20]:
-
 
 print("The number of null values in each column\n",data.isnull().sum())
 
@@ -80,23 +67,17 @@ print("The number of null values in each column\n",data.isnull().sum())
 # 
 # this will help to predict the data more accurate
 
-# In[21]:
-
 
 data['pickup_datetime'] = pd.to_datetime(data.pickup_datetime)
 data['dropoff_datetime'] = pd.to_datetime(data.dropoff_datetime)
 data[['pickup_datetime','dropoff_datetime']].dtypes
 
 
-# In[22]:
-
 
 data['store_and_fwd_flag'].value_counts()
 
 
 # we shall plot the graph of all the continous variables
-
-# In[23]:
 
 
 print(data['trip_duration'].describe(),"\n")
@@ -105,8 +86,6 @@ print('\n',data['trip_duration'].describe()/3600)
 
 
 # what 538 hours,this is our outlier in the given data for 'trip_duration'
-
-# In[24]:
 
 
 sns.distplot(data['trip_duration'])
@@ -118,13 +97,9 @@ plt.show()
 #      LOG Transform
 #      When our original continuous data do not follow the bell curve(consits of outliers), we can log transform this data to make it as 'normal', so that our statistical analysis becomes more valid
 
-# In[25]:
-
 
 plt.figure(figsize=(20, 5))
 
-
-# In[26]:
 
 
 #using log
@@ -140,8 +115,6 @@ sns.distplot(data['tripLog'])
 plt.show()
 
 
-# In[38]:
-
 
 plt.figure(figsize=(20, 10))
 plt.subplot(222)
@@ -150,11 +123,6 @@ plt.xlabel('vendor_id')
 plt.ylabel('Frequency')
 plt.show()
 print("vendor 2 has suplied more cabs")
-
-
-# In[36]:
-
-
 plt.figure(figsize=(10, 5))
 sns.countplot(data['store_and_fwd_flag'])
 plt.xlabel('store_and_fwd_flag')
@@ -162,18 +130,7 @@ plt.ylabel('Frequency')
 
 
 # we shall find the corr between numerical columns
-
-# In[43]:
-
-
 data.corr()
-
-
-# We shall plot a map between all the values
-
-# In[52]:
-
-
 plt.figure(figsize=(12, 6))
 df1 = data.drop(['id','tripLog','store_and_fwd_flag','trip_duration'],
         axis=1)
@@ -182,9 +139,6 @@ ax = sns.heatmap(data.corr(), xticklabels=df1.columns, yticklabels=df1.columns,
 
 
 # As we have datatime type in our dataset we can do some analysis on them !
-
-# In[59]:
-
 
 #we should get data and time seperate from datetime.
 
@@ -215,9 +169,3 @@ plt.ylabel('Total number of pickups')
 # 
 #     0-Sunday.....6-Saturday
 # Sunday and Saturday are having low trips when we compare with weekdays and also high on Thursday.And trips are high in evening hour in the day. 18th and 19th hours 
-
-# In[ ]:
-
-
-
-
