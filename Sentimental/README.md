@@ -10,19 +10,19 @@
 
 ## Overview
 
-ABC restaurent wants a binary classification(positive or negative) model analyze review ,Used Naive Bayes
+ ABC restaurent wants a binary classification(positive or negative) model analyze review ,Used Naive Bayes
 
 ```
 ## Directory Tree 
 ```
-├── Fresh.tsv
-├── Historic.tsv
-├── NBclassifierSentimental
-├── Predicted_Sentiments_Fresh.tsv
-├── README.md
-├── Sentiment-test.ipynb
-├── Sentiment-train.ipynb
-├── sentimental.pkl
+├── Fresh.tsv 
+├── Historic.tsv 
+├── NBclassifierSentimental 
+├── Predicted_Sentiments_Fresh.tsv 
+├── README.md 
+├── Sentiment-test.ipynb 
+├── Sentiment-train.ipynb 
+├── sentimental.pkl 
 ```
 
 ## Bug / Feature Request
