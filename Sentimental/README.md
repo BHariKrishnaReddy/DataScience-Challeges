@@ -12,7 +12,6 @@
 
  ABC restaurent wants a binary classification(positive or negative) model analyze review ,Used Naive Bayes
 
-```
 ## Directory Tree 
 ```
 ├── Fresh.tsv 
