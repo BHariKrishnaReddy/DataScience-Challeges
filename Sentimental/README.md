@@ -1,6 +1,6 @@
 # Sentimental Analysis: 
 
-## Table of Content
+### Table of Content
 
   * [Overview](#overview)
   * [Directory Tree](#directory-tree)
@@ -8,11 +8,11 @@
 
 
 
-## Overview
+#### Overview
 
  ABC restaurent wants a binary classification(positive or negative) model analyze review ,Used Naive Bayes
 
-## Directory Tree 
+#### Directory Tree 
 ```
 ├── Fresh.tsv 
 ├── Historic.tsv 
@@ -24,6 +24,6 @@
 ├── sentimental.pkl 
 ```
 
-## Bug / Feature Request
+#### Bug / Feature Request
 
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an [issue](https://github.com/BHariKrishnaReddy/DataScience-Challeges/issues) here by including your search query and the expected result
