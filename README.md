@@ -6,4 +6,4 @@
 
 
 #### Non-Sync
-*  If have an idea and looking for the contributers you can always reach me here !
+*  If have an idea and looking for the contributers you can always reach me on <a href="https://www.linkedin.com/in/bharikrishnareddy12aug1999">Linkedin</a> !
