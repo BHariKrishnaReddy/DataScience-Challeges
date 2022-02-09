@@ -6,4 +6,4 @@
 
 
 #### Other Help
-*  If have any idea/doubt/looking for the contributer to your repos,you can always reach me on <a href="https://www.linkedin.com/in/bharikrishnareddy12aug1999">Linkedin</a> !
+*  If you have any idea/doubt/looking for the contributer to your repos,you can always reach me on <a href="https://www.linkedin.com/in/bharikrishnareddy12aug1999">Linkedin</a> !
